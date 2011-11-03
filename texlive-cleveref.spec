@@ -1,3 +1,9 @@
+# revision 21918
+# category Package
+# catalog-ctan /macros/latex/contrib/cleveref
+# catalog-date 2011-04-02 11:34:17 +0200
+# catalog-license lppl
+# catalog-version 0.17.9
 Name:		texlive-cleveref
 Version:	0.17.9
 Release:	1
@@ -52,6 +58,7 @@ range.
 #- source
 %doc %{_texmfdistdir}/source/latex/cleveref/cleveref.dtx
 %doc %{_texmfdistdir}/source/latex/cleveref/cleveref.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ range.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
