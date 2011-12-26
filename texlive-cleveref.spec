@@ -1,11 +1,11 @@
-# revision 21918
+# revision 24896
 # category Package
 # catalog-ctan /macros/latex/contrib/cleveref
-# catalog-date 2011-04-02 11:34:17 +0200
+# catalog-date 2011-12-20 06:33:33 +0100
 # catalog-license lppl
-# catalog-version 0.17.9
+# catalog-version 0.18
 Name:		texlive-cleveref
-Version:	0.17.9
+Version:	0.18
 Release:	1
 Summary:	Intelligent cross-referencing
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The package enhances LaTeX's cross-referencing features,
@@ -36,19 +33,19 @@ sequences of numerically-consecutive labels to a reference
 range.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
