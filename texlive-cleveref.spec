@@ -32,16 +32,8 @@ formatted according to its type. In such lists, it can collapse
 sequences of numerically-consecutive labels to a reference
 range.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -56,7 +48,6 @@ range.
 #- source
 %doc %{_texmfdistdir}/source/latex/cleveref/cleveref.dtx
 %doc %{_texmfdistdir}/source/latex/cleveref/cleveref.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,5 +58,3 @@ range.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
