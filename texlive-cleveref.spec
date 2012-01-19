@@ -1,11 +1,11 @@
-# revision 24937
+# revision 25141
 # category Package
 # catalog-ctan /macros/latex/contrib/cleveref
-# catalog-date 2011-12-24 13:09:03 +0100
+# catalog-date 2012-01-17 21:38:23 +0100
 # catalog-license lppl
-# catalog-version 0.18.1
+# catalog-version 0.18.2
 Name:		texlive-cleveref
-Version:	0.18.1
+Version:	0.18.2
 Release:	1
 Summary:	Intelligent cross-referencing
 Group:		Publishing
