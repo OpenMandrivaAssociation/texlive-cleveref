@@ -1,11 +1,11 @@
-# revision 25979
+# revision 27807
 # category Package
 # catalog-ctan /macros/latex/contrib/cleveref
-# catalog-date 2012-04-15 19:24:00 +0200
+# catalog-date 2012-09-25 18:02:58 +0200
 # catalog-license lppl
-# catalog-version 0.18.5
+# catalog-version 0.18.6
 Name:		texlive-cleveref
-Version:	0.18.5
+Version:	0.18.6
 Release:	1
 Summary:	Intelligent cross-referencing
 Group:		Publishing
@@ -61,6 +61,10 @@ cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
 
 
 %changelog
+* Fri Oct 26 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.6-1
++ Revision: 819898
+- Update to latest release.
+
 * Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.5-1
 + Revision: 804526
 - Update to latest release.
