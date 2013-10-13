@@ -1,11 +1,11 @@
-# revision 27807
+# revision 29503
 # category Package
 # catalog-ctan /macros/latex/contrib/cleveref
-# catalog-date 2012-09-25 18:02:58 +0200
+# catalog-date 2013-03-24 16:33:18 +0100
 # catalog-license lppl
-# catalog-version 0.18.6
+# catalog-version 0.18.9
 Name:		texlive-cleveref
-Version:	0.18.6
+Version:	0.18.9
 Release:	1
 Summary:	Intelligent cross-referencing
 Group:		Publishing
@@ -58,46 +58,3 @@ range.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Oct 26 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.6-1
-+ Revision: 819898
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.5-1
-+ Revision: 804526
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.4-1
-+ Revision: 779422
-- Update to latest release.
-
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.3-1
-+ Revision: 770135
-- Update to latest upstream package
-
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.2-1
-+ Revision: 762777
-- Update to latest upstream package
-
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18.1-1
-+ Revision: 758835
-- texlive-cleveref
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.18-2
-+ Revision: 750253
-- Rebuild to reduce used resources
-
-* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.18-1
-+ Revision: 745168
-- texlive-cleveref
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.17.9-1
-+ Revision: 718070
-- texlive-cleveref
-- texlive-cleveref
-- texlive-cleveref
-- texlive-cleveref
-- texlive-cleveref
-
