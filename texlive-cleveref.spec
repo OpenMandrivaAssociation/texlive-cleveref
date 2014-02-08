@@ -6,7 +6,7 @@
 # catalog-version 0.18.6
 Name:		texlive-cleveref
 Version:	0.18.6
-Release:	1
+Release:	2
 Summary:	Intelligent cross-referencing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cleveref
