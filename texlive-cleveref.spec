@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 0.19
 Name:		texlive-cleveref
-Version:	0.19.0
-Release:	5
+Version:	0.19
+Release:	1
 Summary:	Intelligent cross-referencing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cleveref
