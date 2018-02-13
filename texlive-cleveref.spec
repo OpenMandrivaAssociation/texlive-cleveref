@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version 0.19
 Name:		texlive-cleveref
-Version:	0.19
+Version:	0.21.1
 Release:	1
 Summary:	Intelligent cross-referencing
 Group:		Publishing
